@@ -1,0 +1,12 @@
+Если у вас есть проблема, то вот пару FAQ
+
+    Проблема с БД Прежде чем приступать к работе, удалите папку instance
+
+    Открой терминал и введи python, для переключения на язык python
+    Теперь импортируй app и bd из main: >>>from main import app, db
+    После того как в твоем проекте появилась папка instance введи в терминал: >>>app.app_context().push()
+    И создай файл ДБ: >>>db.create_all()
+
+    Про переменные Junja2
+
+Вот материал: https://proglib.io/p/rukovodstvo-dlya-nachinayushchih-po-shablonam-jinja-v-flask-2022-09-05

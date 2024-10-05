@@ -9,6 +9,7 @@ pyaudio = "*"
 flask = "*"
 sqlalchemy = "*"
 flask-sqlalchemy = "*"
+numpy = "*"
 
 [dev-packages]
 
