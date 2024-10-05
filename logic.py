@@ -9,7 +9,6 @@ import speech_recognition as sr
 def speach_en():
     r = sr.Recognizer()
     with sr.Microphone() as source:
-        print("Say something!")
         audio = r.listen(source)
     # recognize speech using Google Speech Recognition
     try:

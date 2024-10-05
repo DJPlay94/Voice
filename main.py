@@ -2,6 +2,7 @@
 from flask import Flask, render_template,request, redirect
 #Подключение библиотеки баз данных
 from flask_sqlalchemy import SQLAlchemy
+from logic import speach_en
 
 
 app = Flask(__name__)
@@ -113,7 +114,10 @@ def form_create():
         return render_template('create_card.html')
 
 
-
+@app.route("/voice")
+def voices():
+    text = speach_en()
+    return render_template("create_card.html", text=text)
 
 
 if __name__ == "__main__":
