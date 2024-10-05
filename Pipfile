@@ -6,6 +6,9 @@ name = "pypi"
 [packages]
 speechrecognition = "*"
 pyaudio = "*"
+flask = "*"
+sqlalchemy = "*"
+flask-sqlalchemy = "*"
 
 [dev-packages]
 
